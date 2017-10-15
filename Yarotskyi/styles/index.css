@@ -47,6 +47,7 @@ header
 	overflow: hidden;
 	padding-left: 250px;
 	background-color: #A5A5A5;
+	text-align: center;
 }
 
 
@@ -58,14 +59,24 @@ main
 	height: 100vh;
 }
 
+main > h1
+{
+	text-align: center;
+}
+
 footer
 {
 	overflow: hidden;
-	padding-left: 250px;
 	height: 80px;
-	width: 100%;
+	width: 81.7%;
 	background-color: #555555;
 	position: absolute;
-	left: 250px;
+	/*margin-left: 250px;*/
 	bottom: 0;
+	right: 0;
+}
+
+footer > p
+{
+	text-align: center;
 }
