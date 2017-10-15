@@ -1,20 +1,18 @@
-#menuBtn
+*
 {
-	font-size: 36px;
+	overflow: hidden;
+	margin: 0 0 0 0;
 }
 
 .sideNav
 {
 	height: 100%;
-	width: 0;
+	width: 250px;
 	position: fixed;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #111;
-	overflow-x: hidden;
 	padding-top: 60px;
-	transition: 0.5s;
 }
 
 .sideNav a
@@ -24,27 +22,12 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
 }
 
-.sidenav a : hover, .offcanvas a : focus
+.sideNav a:hover
 {
-	color: #f1f1f1;
-}
-
-.sidenav .closeBtn
-{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 48px;
-    margin-left: 50px;
-}
-
-#main
-{
-	transition: margin-left .5s;
-	padding: 20px;
+	color: #f2f2f2;
+	font-size: 30;
 }
 
 @media screen and (max-height: 450px)
@@ -57,4 +40,32 @@
 	{
 		font-size: 20px;
 	}
+}
+
+header
+{
+	overflow: hidden;
+	padding-left: 250px;
+	background-color: #A5A5A5;
+}
+
+
+main
+{
+	overflow: hidden;
+	padding-left: 250px;
+	background-color: #818181;
+	height: 100vh;
+}
+
+footer
+{
+	overflow: hidden;
+	padding-left: 250px;
+	height: 80px;
+	width: 100%;
+	background-color: #555555;
+	position: absolute;
+	left: 250px;
+	bottom: 0;
 }
