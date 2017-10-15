@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Test page</title>
+	<style type="text/css">
+	body {
+    font: 18px 'Verdana';
+    margin: 1;
+    padding: 0;
+}
+ul {
+    display: block;
+    margin: 5px;
+    padding: 20px;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 12px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: black;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 38px;
+    left: 10;
+    background-color: white;
+    border: 1px solid red;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 20px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+ul.submenu > li >  {
+    text-decoration: underline;
+}
+		ul.menu > li:hover > ul.submenu {
+        display: block;
+}
+	</style>
+</head>
+<body>
+<ul class="menu">
+	<li> <a href=#>Menu 1</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+	    </ul>
+	</li>
+    <li> <a href=#>Menu 2</a>
+         <ul class="submenu">
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+        </ul>
+    </li>
+    <li> <a href=#>Menu3</a>
+    <ul class="submenu">
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+        </ul>
+    </ul>
+   </li>
+    <footer>
+    ©Cranberry IT 
+  </footer>
+</body>
+</html>
